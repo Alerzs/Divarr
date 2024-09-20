@@ -7,7 +7,7 @@ class Costumer(models.Model):
 class Agahi(models.Model):
     title = models.CharField(max_length=25)
     text = models.TextField()
-    writer = models.ForeignKey(Costumer)
+    writer = models.ForeignKey(Costumer , on_delete=models.CASCADE)
 
 
 
